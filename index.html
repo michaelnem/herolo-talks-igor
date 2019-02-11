@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>test</title>
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+        rel="stylesheet" />
+
+    <link href="impress-demo.css" rel="stylesheet" />
+
+    <!-- <link rel="shortcut icon" href="favicon.png" /> -->
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png" /> -->
+</head>
+
+<body>
+
+    <div id="impress">
+
+        <div id="bored" class="step" data-x="-1000" data-y="-1500">
+            <q>Hi my name is <b>Michael</b>.</q>
+        </div>
+
+         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <h1>BASIC CSS</h1>
+        </div>
+
+        <div id="its" class="step" data-x="850" data-y="3000" data-rotate="180" data-scale="5">
+            <p>
+                It’s a <strong>presentation tool</strong> <br>
+                inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br>
+                and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.
+            </p>
+        </div>
+
+        <div id="tiny1" class="step" data-x="2825" data-y="2325" data-z="-5000" data-rotate="120" data-scale="1">
+            <p>and <b>tiny</b> ideas</p>
+        </div>
+        <div id="tiny2" class="step" data-x="2825" data-y="2325" data-z="-4000" data-rotate="240" data-scale="1">
+            <p>and <b>tiny2</b> ideas</p>
+        </div>
+        <div id="tiny3" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="360" data-scale="1">
+            <p>and <b>tiny3</b> ideas</p>
+        </div>
+
+        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="0" data-rotate-y="10"
+            data-scale="2">
+            <p>
+                <span class="have">have</span>
+                <span class="you">you</span>
+                <span class="noticed">noticed</span>
+                <span class="its">it’s</span>
+                <span class="in">in</span>
+                <b>3D<sup>*</sup></b>?
+            </p>
+            <span class="footnote">* beat that, prezi ;)</span>
+        </div>
+        <div id="its-in-3d-2" class="step" data-x="6200" data-y="5300" data-z="-100" data-rotate-x="120" data-rotate-y="10"
+            data-scale="2">
+            <p>
+                <span class="have">have</span>
+                <span class="you">you</span>
+                <span class="noticed">noticed</span>
+                <span class="its">it’s</span>
+                <span class="in">in</span>
+                <b>3D<sup>*</sup></b>?
+            </p>
+            <span class="footnote">* beat that, prezi ;)</span>
+        </div>
+        <div id="its-in-3d-3" class="step" data-x="6200" data-y="6300" data-z="-100" data-rotate-x="240" data-rotate-y="10"
+            data-scale="2">
+            <p>
+                <span class="have">have</span>
+                <span class="you">you</span>
+                <span class="noticed">noticed</span>
+                <span class="its">it’s</span>
+                <span class="in">in</span>
+                <b>3D<sup>*</sup></b>?
+            </p>
+            <span class="footnote">* beat that, prezi ;)</span>
+        </div>
+    </div>
+
+
+    <!-- <div id="impress" data-transition-duration="2000">
+
+
+            <div id="overview" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3" data-rotate-y="90">
+                 <h1>A Study in 3D Rotations</h1>
+            </div>
+            <div id="overview2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
+                 <p>Unlike the <code>x/y/z</code> coordinates (aka translations), the <code>rotate-x/y/z</code> rotations are applied in a 
+                 specific order, and order matters. This demo presentation exhibits the use of the new <code>data-rotate- order</code> attribute.
+                 Instead of the default "xyz" order, the steps use the reversed <em>"zyx"</em> order in applying rotations around each axis.
+                 Some of the steps (<a href="#step-3">3</a> &amp; <a href="#step-7">7</a>), are in positions that are not possible with the default "xyz" order.</p>
+            </div>
+        
+            <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
+                 data-goto-prev="step-8">
+                <p>Slide one</p>
+            </div>
+        
+            <div id="step-2" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
+                <p>Slide two</p>
+            </div>
+        
+            <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
+                <p>Slide three</p>
+            </div>
+        
+            <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
+                <p>Slide four</p>
+            </div>
+        
+            <div id="step-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
+                <p>Slide five</p>
+            </div>
+        
+            <div id="step-6" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
+                <p>Slide six</p>
+            </div>
+        
+            <div id="step-7" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
+                <p>Slide seven</p>
+            </div>
+        
+            <div id="step-8" class="step" data-x="379" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
+                 data-goto-next="step-1">
+                <p>Slide eight</p>
+            </div>
+        </div> -->
+        
+
+    <script src="impress.js"></script>
+    <script>
+        impress().init();
+    </script>
+</body>
+
+</html>
